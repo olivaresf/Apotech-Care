@@ -94,7 +94,6 @@
 			children = (
 				4ED670F32615A63C00A48322 /* ApotechCare */,
 				4ED670F22615A63C00A48322 /* Products */,
-				F187802E6C495E852AF1A108 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -187,13 +186,6 @@
 				9FF3081B2616C5A9004E3AF4 /* CheckOutCell.xib */,
 			);
 			path = "Check Out";
-			sourceTree = "<group>";
-		};
-		F187802E6C495E852AF1A108 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
