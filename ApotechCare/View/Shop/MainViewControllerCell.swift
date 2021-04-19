@@ -1,5 +1,5 @@
 //
-//  CategoryCellTwo.swift
+//  MainViewControllerCell.swift
 //  ApotechCare
 //
 //  Created by Prince Alvin Yusuf on 01/04/21.
@@ -8,14 +8,10 @@
 
 import UIKit
 
-class CategoryCellTwo: UICollectionViewCell {
-    
+class MainViewControllerCell: UICollectionViewCell {
     
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var mainTextLabel: UILabel!
     
-    override class func awakeFromNib() {
-        super.awakeFromNib()
-        
-    }
+    @IBOutlet weak var secondaryTextLabel: UILabel?
 }

@@ -80,51 +80,51 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
         
     }
     
+    func setupCategoryCell(collectionView: UICollectionView,
+                           indexPath: IndexPath,
+                           imageName: String,
+                           mainText: String,
+                           secondaryText: String?) -> MainViewControllerCell {
+        
+        let cellCategory = collectionView.dequeueReusableCell(withReuseIdentifier: "mainCellIdentifier",
+                                                              for: indexPath) as! MainViewControllerCell
+                
+        let image = UIImage(named: "\(imageName)")
+        cellCategory.imageView.image = image
+        cellCategory.mainTextLabel.text = mainText
+        cellCategory.secondaryTextLabel?.text = secondaryText
+        
+        return cellCategory
+    }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        if collectionView == self.medicineCollectionView {
-            let cellMedicine = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionIdentifier", for: indexPath) as! MedicineCell
+        if collectionView == medicineCollectionView {
             let index = medicineModel.medicine[indexPath.row]
-            let image = UIImage(named: "\(index.image)")
-            cellMedicine.imageView.image = image
-            cellMedicine.medicineLabel.text = index.medicine
-            cellMedicine.priceLabel.text = index.price
-            
-            return cellMedicine
+            return setupCategoryCell(collectionView: medicineCollectionView,
+                                     indexPath: indexPath,
+                                     imageName: index.image,
+                                     mainText: index.medicine,
+                                     secondaryText: index.price)
         }
         
-        if collectionView == self.categoryOneCollectionView {
-            let cellCategory = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryOneIdentifier", for: indexPath) as! CategoryCellOne
-            let index = categoryModel.category[indexPath.row]
-            let image = UIImage(named: "\(index.image)")
-            cellCategory.imageView.image = image
-            cellCategory.categoryLabel.text = index.name
-            
-            return cellCategory
+        let offset: Int
+        if collectionView == categoryOneCollectionView {
+            offset = 0
+        } else if collectionView == categoryTwoCollectionView {
+            offset = 3
+        } else if collectionView == categoryThreeCollectionView {
+            offset = 6
+        } else {
+            offset = 0
         }
-        
-        if collectionView == self.categoryTwoCollectionView {
-            let cellCategory = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryTwoIdentifier", for: indexPath) as! CategoryCellTwo
-            let index = categoryModel.category[indexPath.row + 3]
-            let image = UIImage(named: "\(index.image)")
-            cellCategory.imageView.image = image
-            cellCategory.categoryLabel.text = index.name
-            
-            return cellCategory
-        }
-        
-        if collectionView == self.categoryThreeCollectionView {
-            let cellCategory = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryThreeIdentifier", for: indexPath) as! CategoryCellThree
-            let index = categoryModel.category[indexPath.row + 6]
-            let image = UIImage(named: "\(index.image)")
-            cellCategory.imageView.image = image
-            cellCategory.categoryLabel.text = index.name
-            
-            return cellCategory
-        }
-        
-        return UICollectionViewCell()
-        
+       
+        let index = categoryModel.category[indexPath.row + offset]
+        return setupCategoryCell(collectionView: collectionView,
+                                 indexPath: indexPath,
+                                 imageName: index.image,
+                                 mainText: index.name,
+                                 secondaryText: nil)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
