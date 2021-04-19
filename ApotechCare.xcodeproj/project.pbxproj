@@ -21,10 +21,7 @@
 		9F5E57F12615BB2100767819 /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5E57F02615BB2100767819 /* Medicine.swift */; };
 		9F5E57F42615C2E500767819 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5E57F32615C2E500767819 /* Category.swift */; };
 		9F5E57F72615C31600767819 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5E57F62615C31600767819 /* CategoryModel.swift */; };
-		9F5E57FA2615C50700767819 /* CategoryCellOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5E57F92615C50700767819 /* CategoryCellOne.swift */; };
-		9F5E57FE2615CC7100767819 /* CategoryCellTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5E57FD2615CC7100767819 /* CategoryCellTwo.swift */; };
-		9F5E58012615CCA300767819 /* CategoryCellThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5E58002615CCA300767819 /* CategoryCellThree.swift */; };
-		9F7AE4AD2615B79C00EB56E2 /* MedicineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AE4AC2615B79C00EB56E2 /* MedicineCell.swift */; };
+		9F7AE4AD2615B79C00EB56E2 /* MainViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AE4AC2615B79C00EB56E2 /* MainViewControllerCell.swift */; };
 		9FC8EBCF2616D4B6000AE773 /* MedicineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC8EBCE2616D4B6000AE773 /* MedicineViewController.swift */; };
 		9FF308182616C4FA004E3AF4 /* CheckOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF308172616C4FA004E3AF4 /* CheckOutViewController.swift */; };
 		9FF3081C2616C5A9004E3AF4 /* CheckOutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF3081A2616C5A9004E3AF4 /* CheckOutCell.swift */; };
@@ -50,10 +47,7 @@
 		9F5E57F02615BB2100767819 /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
 		9F5E57F32615C2E500767819 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		9F5E57F62615C31600767819 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
-		9F5E57F92615C50700767819 /* CategoryCellOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCellOne.swift; sourceTree = "<group>"; };
-		9F5E57FD2615CC7100767819 /* CategoryCellTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCellTwo.swift; sourceTree = "<group>"; };
-		9F5E58002615CCA300767819 /* CategoryCellThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCellThree.swift; sourceTree = "<group>"; };
-		9F7AE4AC2615B79C00EB56E2 /* MedicineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineCell.swift; sourceTree = "<group>"; };
+		9F7AE4AC2615B79C00EB56E2 /* MainViewControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerCell.swift; sourceTree = "<group>"; };
 		9FC8EBCE2616D4B6000AE773 /* MedicineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineViewController.swift; sourceTree = "<group>"; };
 		9FF308172616C4FA004E3AF4 /* CheckOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutViewController.swift; sourceTree = "<group>"; };
 		9FF3081A2616C5A9004E3AF4 /* CheckOutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutCell.swift; sourceTree = "<group>"; };
@@ -182,10 +176,7 @@
 		9FF308142616C4CB004E3AF4 /* Shop */ = {
 			isa = PBXGroup;
 			children = (
-				9F7AE4AC2615B79C00EB56E2 /* MedicineCell.swift */,
-				9F5E57F92615C50700767819 /* CategoryCellOne.swift */,
-				9F5E57FD2615CC7100767819 /* CategoryCellTwo.swift */,
-				9F5E58002615CCA300767819 /* CategoryCellThree.swift */,
+				9F7AE4AC2615B79C00EB56E2 /* MainViewControllerCell.swift */,
 			);
 			path = Shop;
 			sourceTree = "<group>";
@@ -328,18 +319,15 @@
 				9FF308182616C4FA004E3AF4 /* CheckOutViewController.swift in Sources */,
 				4ED670F92615A63C00A48322 /* MainViewController.swift in Sources */,
 				9F5E57F12615BB2100767819 /* Medicine.swift in Sources */,
-				9F5E57FE2615CC7100767819 /* CategoryCellTwo.swift in Sources */,
 				9FF3081C2616C5A9004E3AF4 /* CheckOutCell.swift in Sources */,
 				4ED670F52615A63C00A48322 /* AppDelegate.swift in Sources */,
 				9F5E57EE2615BADF00767819 /* MedicineModel.swift in Sources */,
 				4ED670F72615A63C00A48322 /* SceneDelegate.swift in Sources */,
 				9FC8EBCF2616D4B6000AE773 /* MedicineViewController.swift in Sources */,
-				9F5E58012615CCA300767819 /* CategoryCellThree.swift in Sources */,
 				9F0164BB2617DCD200D58176 /* MedicineObject.swift in Sources */,
-				9F5E57FA2615C50700767819 /* CategoryCellOne.swift in Sources */,
 				9F5E57F72615C31600767819 /* CategoryModel.swift in Sources */,
 				9F064D8D261811810054F932 /* CategoryViewController.swift in Sources */,
-				9F7AE4AD2615B79C00EB56E2 /* MedicineCell.swift in Sources */,
+				9F7AE4AD2615B79C00EB56E2 /* MainViewControllerCell.swift in Sources */,
 				9F5E57F42615C2E500767819 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

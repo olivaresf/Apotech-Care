@@ -28,7 +28,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionIdentifier" id="q4j-34-t5Y" customClass="MedicineCell" customModule="ApotechCare" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="mainCellIdentifier" id="q4j-34-t5Y" customClass="MainViewControllerCell" customModule="ApotechCare" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="7.5" width="176" height="183"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="lVS-HM-Jk0">
@@ -68,8 +68,8 @@
                                         <size key="customSize" width="176" height="183"/>
                                         <connections>
                                             <outlet property="imageView" destination="faU-tj-3aq" id="9CO-bC-AMp"/>
-                                            <outlet property="medicineLabel" destination="ipi-pD-XnD" id="cCf-VU-Xgs"/>
-                                            <outlet property="priceLabel" destination="N8s-jn-50P" id="AGq-W1-e68"/>
+                                            <outlet property="mainTextLabel" destination="ipi-pD-XnD" id="cCf-VU-Xgs"/>
+                                            <outlet property="secondaryTextLabel" destination="N8s-jn-50P" id="AGq-W1-e68"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -100,7 +100,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="categoryOneIdentifier" id="3iT-3W-DVq" customClass="CategoryCellOne" customModule="ApotechCare" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="mainCellIdentifier" id="3iT-3W-DVq" customClass="MainViewControllerCell" customModule="ApotechCare" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="15T-GQ-BHB">
@@ -130,8 +130,8 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="128" height="128"/>
                                         <connections>
-                                            <outlet property="categoryLabel" destination="a9T-e8-UHa" id="cMK-ah-4h7"/>
                                             <outlet property="imageView" destination="nQX-bE-W3z" id="syf-vr-iMl"/>
+                                            <outlet property="mainTextLabel" destination="a9T-e8-UHa" id="bcZ-ew-lx3"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -150,7 +150,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="categoryTwoIdentifier" id="edS-Dv-gkx" customClass="CategoryCellTwo" customModule="ApotechCare" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="mainCellIdentifier" id="edS-Dv-gkx" customClass="MainViewControllerCell" customModule="ApotechCare" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="B9Y-Ae-gI2">
@@ -179,8 +179,8 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <connections>
-                                            <outlet property="categoryLabel" destination="ieP-qs-ari" id="mJ9-Q2-bAB"/>
                                             <outlet property="imageView" destination="XVr-Sc-oB1" id="yia-vF-5pE"/>
+                                            <outlet property="mainTextLabel" destination="ieP-qs-ari" id="CIs-Vg-DO2"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -199,7 +199,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="categoryThreeIdentifier" id="SkD-wi-oav" customClass="CategoryCellThree" customModule="ApotechCare" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="mainCellIdentifier" id="SkD-wi-oav" customClass="MainViewControllerCell" customModule="ApotechCare" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="G8y-pG-eBf">
@@ -228,8 +228,8 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <connections>
-                                            <outlet property="categoryLabel" destination="PCR-CZ-SH5" id="p9G-Lm-Lni"/>
                                             <outlet property="imageView" destination="KH0-lX-pGV" id="lAE-5U-0nt"/>
+                                            <outlet property="mainTextLabel" destination="PCR-CZ-SH5" id="flx-6t-nae"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
